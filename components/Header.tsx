@@ -8,10 +8,10 @@ export default function Header() {
           Honoka Aikawa portfolio.
         </h1>
         <nav className="space-x-4">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/works">Works</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/portfolio">Home</Link>
+          <Link href="/portfolio/about">About</Link>
+          <Link href="/portfolio/works">Works</Link>
+          <Link href="/portfolio/contact">Contact</Link>
         </nav>
       </div>
     </header>
