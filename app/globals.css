@@ -1,15 +1,17 @@
-/* ✅ Tailwind の基本構成を先頭に */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* ✅ 明るいテーマ（デフォルト） */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-/* ✅ ダークモード時に色を変更 */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -17,7 +19,8 @@
   }
 }
 
-/* ✅ body に色とフォントを適用（Tailwindで） */
 body {
-  @apply bg-[var(--background)] text-[var(--foreground)] font-sans;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }

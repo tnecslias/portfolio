@@ -2,13 +2,13 @@ export default function Home() {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br"
-      style={{ backgroundImage: "url('/portfolio/images/bg.jpg')" }}
+      style={{ backgroundImage: "url('/images/bg.jpg')" }}
     >
       <div className="max-w-2xl text-center bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-xl border border-gray-200">
         {/* 🔹 プロフィール画像を名前の上に表示 */}
         <div className="flex justify-center mb-6">
           <img
-            src="/portfolio/images/profile.jpg"
+            src="/images/profile.jpg"
             alt="プロフィール画像"
             className="w-36 h-36 object-cover rounded-full border-4 border-gray-400 shadow-lg"
           />
@@ -35,13 +35,13 @@ export default function Home() {
         {/* 🔹 ボタン */}
         <div className="flex justify-center gap-4 flex-wrap mb-6">
           <a
-            href="/portfolio/about"
+            href="/about"
             className="px-5 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition"
           >
             経歴を見る
           </a>
           <a
-            href="/portfolio/works"
+            href="/works"
             className="px-5 py-2 border border-purple-500 text-purple-600 rounded-full hover:bg-purple-50 transition"
           >
             作品を見る
