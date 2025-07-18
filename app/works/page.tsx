@@ -20,16 +20,16 @@ const works = [
     url: "https://tnecslias.github.io/calender/",
   },
   {
+    title: "勉強タイマー",
+    description: "JavaScriptを使った20分↔︎5分のタイマー",
+    image: "/images/study-timer.png",
+    url: "https://tnecslias.github.io/study-timer/",
+  },
+  {
     title: "北海道紹介サイト",
     description: "UIにこだわった、地元の観光スポット紹介サイト。1年の集大成。",
     image: "/images/local.png",
     url: "https://tnecslias.github.io/local-site/",
-  },
-  {
-    title: "映画紹介サイト",
-    description: "HTML/CSSで作成した、映画紹介サイト。",
-    image: "/images/movie.png",
-    url: "https://tnecslias.github.io/movie-site/",
   },
   {
     title: "ECサイト",
@@ -39,7 +39,7 @@ const works = [
   },
   {
     title: "アーティスト紹介サイト",
-    description: "1年次の学内コンペで意欲賞を受賞しました",
+    description: "HTML/CSSで作成。1年次の学内コンペで意欲賞を受賞しました",
     image: "/images/artist.png",
     url: "https://tnecslias.github.io/artist-site/",
   },
