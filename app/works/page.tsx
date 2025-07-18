@@ -3,7 +3,8 @@ import WorkCard from "../../components/WorkCard";
 const works = [
   {
     title: "お気に入りアイテム紹介サイト",
-    description: "HTML/CSSで作成したワンカラムレイアウトサイト",
+    description:
+      "HTML/CSSで作成したワンカラムレイアウトサイト。レスポンシブ対応。",
     image: "/images/item.png",
     url: "https://tnecslias.github.io/item-site/",
   },
@@ -20,7 +21,7 @@ const works = [
     url: "https://tnecslias.github.io/calender/",
   },
   {
-    title: "勉強タイマー",
+    title: "ポモドーロタイマー",
     description: "JavaScriptを使った20分↔︎5分のタイマー",
     image: "/images/study-timer.png",
     url: "https://tnecslias.github.io/study-timer/",
@@ -39,7 +40,7 @@ const works = [
   },
   {
     title: "アーティスト紹介サイト",
-    description: "HTML/CSSで作成。1年次の学内コンペで意欲賞を受賞しました",
+    description: "HTML/CSSで作成。1年次の学内コンペで意欲賞を受賞しました。",
     image: "/images/artist.png",
     url: "https://tnecslias.github.io/artist-site/",
   },
