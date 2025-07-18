@@ -1,4 +1,8 @@
-import nodemailer from "nodemailer";
+// app/api/contact/route.ts
+
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   const body = await req.json();
@@ -10,33 +14,21 @@ export async function POST(req: Request) {
     });
   }
 
-  // SMTPサーバ設定（Gmailを例としています）
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.GMAIL_USER,
-    },
-  });
-
-  const mailOptions = {
-    from: process.env.GMAIL_USER,
-    to: process.env.GMAIL_USER, // 自分に送信
-    subject: "お問い合わせが届きました",
-    text: `名前: ${name}\nメール: ${email}\n\nメッセージ:\n${message}`,
-  };
-
   try {
-    await transporter.sendMail(mailOptions);
-    return new Response(JSON.stringify({ message: "お問い合わせ送信完了！" }), {
+    const data = await resend.emails.send({
+      from: "お問い合わせフォーム <noreply@resend.dev>", // 認証不要な送信元
+      to: "okome930@gmail.com",
+      subject: "お問い合わせが届きました",
+      text: `名前: ${name}\nメール: ${email}\n\nメッセージ:\n${message}`,
+    });
+
+    return new Response(JSON.stringify({ message: "送信成功", data }), {
       status: 200,
     });
-  } catch (err) {
-    console.error(err);
-    return new Response(
-      JSON.stringify({ message: "メール送信に失敗しました。" }),
-      {
-        status: 500,
-      }
-    );
+  } catch (error) {
+    console.error(error);
+    return new Response(JSON.stringify({ message: "送信失敗" }), {
+      status: 500,
+    });
   }
 }

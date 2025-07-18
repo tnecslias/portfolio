@@ -15,22 +15,17 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("送信中...");
 
-    try {
-      const response = await fetch("https://formspree.io/f/xnnznvrr", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
 
-      if (response.ok) {
-        setStatus("送信が完了しました！");
-        setForm({ name: "", email: "", message: "" }); // フォーム初期化
-      } else {
-        setStatus("送信に失敗しました。");
-      }
-    } catch (error) {
-      console.error(error);
-      setStatus("エラーが発生しました。");
+    if (res.ok) {
+      setForm({ name: "", email: "", message: "" });
+      setStatus("送信が完了しました！");
+    } else {
+      setStatus("送信に失敗しました。");
     }
   };
 
@@ -39,30 +34,29 @@ export default function ContactPage() {
       <h3 className="text-xl font-bold mb-3">お問い合わせ</h3>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
-          type="text"
           name="name"
-          placeholder="お名前"
           value={form.name}
           onChange={handleChange}
-          className="border p-2 w-full"
+          placeholder="お名前"
           required
+          className="border p-2 w-full"
         />
         <input
-          type="email"
           name="email"
-          placeholder="メールアドレス"
+          type="email"
           value={form.email}
           onChange={handleChange}
-          className="border p-2 w-full"
+          placeholder="メールアドレス"
           required
+          className="border p-2 w-full"
         />
         <textarea
           name="message"
-          placeholder="メッセージ"
           value={form.message}
           onChange={handleChange}
-          className="border p-2 w-full h-32"
+          placeholder="メッセージ"
           required
+          className="border p-2 w-full h-32"
         />
         <button
           type="submit"
@@ -70,7 +64,7 @@ export default function ContactPage() {
         >
           送信
         </button>
-        {status && <p className="text-sm text-gray-700">{status}</p>}
+        {status && <p>{status}</p>}
       </form>
     </section>
   );
