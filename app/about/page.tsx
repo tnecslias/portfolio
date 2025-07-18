@@ -7,7 +7,6 @@ export default function About() {
         </h3>
         <p>2016年 2月　日本珠算連盟 珠算能力検定試験１級 合格</p>
         <p>2018年10月　日本習字 漢字部 初等師範免許 取得</p>
-        <p>2019年 3月　日本漢字能力検定２級 取得</p>
         <br />
         <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
           賞罰
