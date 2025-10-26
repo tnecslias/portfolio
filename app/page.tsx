@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
         <p className="text-black-600 text-lg mb-4">2002年生まれ　北海道出身</p>
         <h2 className="text-black-600 text-lg mb-4">
-          HAL東京 IT学部 高度情報処理学科 3年
+          HAL東京 IT学部 高度情報学科 3年
         </h2>
 
         {/* 🔹 趣味・特技 */}
