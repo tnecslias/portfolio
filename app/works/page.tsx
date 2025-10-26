@@ -2,6 +2,13 @@ import WorkCard from "../../components/WorkCard";
 
 const works = [
   {
+    title: "地元紹介サイト",
+    description:
+      "HTML/CSS,JavaScriptで作成したツーカラムレイアウトサイト。レスポンシブ対応。",
+    image: "/images/hakodate.png",
+    url: "https://tnecslias.github.io/hakodate-site/",
+  },
+  {
     title: "お気に入りアイテム紹介サイト",
     description:
       "HTML/CSSで作成したワンカラムレイアウトサイト。レスポンシブ対応。",
