@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <section>
-      <ul className="list-disc pl-5">
-        <li>
+      <ul className="pl-5">
+        <li className="list-none">
           <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
             資格・免許
           </h3>
@@ -10,7 +10,7 @@ export default function About() {
           <p>2018年10月　日本習字 漢字部 初等師範免許 取得</p>
         </li>
 
-        <li className="mt-6">
+        <li className="list-none mt-6">
           <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
             賞罰
           </h3>
@@ -18,20 +18,20 @@ export default function About() {
           <p>2025年3月　進級制作展(HAL EVENT WEEK) 銀賞受賞</p>
         </li>
 
-        <li className="mt-6">
+        <li className="list-none mt-6">
           <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-            プログラミングスキル
+            スキル
           </h3>
 
-          <h2>MySQL</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-4">MySQL</h2>
+          <ul className="list-disc ml-6">
             <li>ER図作成</li>
             <li>テーブル設計</li>
             <li>一括ローディング</li>
           </ul>
 
-          <h2>JavaScript</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-4">JavaScript</h2>
+          <ul className="list-disc ml-6">
             <li>Alpine.js：家賃シミュレータ等</li>
             <li>Node.js：予定追加カレンダー</li>
             <li>useState：数字の抽選</li>
@@ -39,36 +39,36 @@ export default function About() {
             <li>jQuery：スライドショー</li>
           </ul>
 
-          <h2>PHP</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-4">PHP</h2>
+          <ul className="list-disc ml-6">
             <li>オーダーシステム（会員情報、割引、獲得ポイント算出可）</li>
             <li>
               SNS（投稿、削除、いいね、プロフィール、ワード検索、投稿画像一覧表示）
             </li>
           </ul>
 
-          <h2>Python</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-4">Python</h2>
+          <ul className="list-disc ml-6">
             <li>
               FlaskでWebサーバ構築（テンプレート継承・cookie/session 認証など）
             </li>
           </ul>
 
-          <h2>Docker</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-4">Docker</h2>
+          <ul className="list-disc ml-6">
             <li>長期インターンでスキル管理システムを開発時に使用</li>
           </ul>
 
-          <h2>ソースコード管理</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-4">ソースコード管理</h2>
+          <ul className="list-disc ml-6">
             <li>GitHubでソースコードを公開している</li>
             <li>
               GitHubを活用した開発フローを理解しており、ブランチ運用やプルリクエストを用いたチーム開発が可能
             </li>
           </ul>
 
-          <h2>その他</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-4">その他</h2>
+          <ul className="list-disc ml-6">
             <li>
               Raspberry Piで温度センサーやランプを使用し、スマートホーム構築
             </li>
@@ -76,7 +76,7 @@ export default function About() {
           </ul>
         </li>
 
-        <li className="mt-6">
+        <li className="list-none mt-6">
           <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
             自己PR
           </h3>
