@@ -109,7 +109,11 @@ export default function About() {
         </div>
 
         {/* 右：自己紹介動画 */}
-        <div className="w-full md:w-[420px] flex-shrink-0">
+        <div
+          className="w-full md:w-[420px] flex-shrink-0
+                        md:-ml-12 
+                        md:mt-24"
+        >
           <iframe
             className="rounded-lg shadow w-full h-[240px] md:h-[300px]"
             src="https://www.youtube.com/embed/【動画IDを入れてください】"
