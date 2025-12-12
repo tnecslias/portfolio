@@ -23,7 +23,6 @@ export default function About() {
           <li>テーブル設計</li>
           <li>一括ローディング</li>
         </ul>
-        </br>
         <h2>JavaScript</h2>
         <ul>
           <li>Alpine.js：家賃シュミレータ、BMIシュミレータを作成</li>
@@ -32,23 +31,19 @@ export default function About() {
           <li>React&Next.js：メモアプリ、GeminiAPIリクエストフォーム、オーダーシステム</li>
           <li>jQuery：映画サイトのスライドショーを作成</li>
         </ul>
-        </br>
         <h2>PHP</h2>
         <ul>
           <li>オーダーシステム（会員情報、割引、獲得ポイント算出可）</li>
           <li>SNS（投稿、削除、いいね、プロフィール、ワード検索、投稿画像一覧表示）</li>
         </ul>
-        <br />
         <h2>Python</h2>
         <ul>
           <li>Flaskを使ってWebサーバを構築<br>（テンプレート継承、cookie、sessionを使ったログインシステム、簡易メモ帳機能）</li>
         </ul>
-        <br />
         <h2>Docker</h2>
         <ul>
           <li>長期インターンでスキル管理システムを開発時に使用</li>
         </ul>
-        <br />
         <h2>ソースコード管理</h2>
         <ul>
           <li>GitHubでソースコードを公開している</li>
