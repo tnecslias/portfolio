@@ -111,7 +111,7 @@ export default function About() {
         {/* 右：自己紹介動画 */}
         <div
           className="w-full md:w-[420px] flex-shrink-0
-                        md:-ml-16
+                        md:-ml-24
                         md:mt-24"
         >
           <iframe
