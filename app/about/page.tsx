@@ -15,6 +15,36 @@ export default function About() {
         <p>2025年3月　進級制作展(HAL EVENT WEEK) 銀賞受賞</p>
         <br />
         <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+          プログラミングスキル
+        </h3>
+        <h2>MySQL</h2>
+        <ul>
+          <li>ER図作成</li>
+          <li>テーブル設計</li>
+          <li>一括ローディング</li>
+        </ul>
+        </br>
+        <h2>JavaScript</h2>
+        <ul>
+          <li>Alpine.js：家賃シュミレータ、BMIシュミレータを作成</li>
+          <li>Node.js：時間指定可の予定追加機能カレンダーを作成</li>
+          <li>useState：数字の抽選</li>
+          <li>React&Next.js：メモアプリ、GeminiAPIリクエストフォーム、オーダーシステム</li>
+          <li>jQuery：映画サイトのスライドショーを作成</li>
+        </ul>
+        </br>
+        <h2>PHP</h2>
+        <ul>
+          <li>オーダーシステム（会員情報、割引、獲得ポイント算出可）</li>
+          <li>SNS（投稿、削除、いいね、プロフィール、ワード検索、投稿画像一覧表示）</li>
+        </ul>
+        <br />
+        <h2>Python</h2>
+        <ul>
+          <li>Flaskを使ってWebサーバを構築<br>（テンプレート継承、cookie、sessionを使ったログインシステム、簡易メモ帳機能）</li>
+        </ul>
+        <br />
+        <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
           自己PR
         </h3>
         <p>
