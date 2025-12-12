@@ -81,26 +81,22 @@ export default function About() {
             </li>
 
             {/* 自己PR */}
-            <li className="list-none mt-8">
+            <li className="list-none mt-8 w-full md:w-full px-0">
               <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
                 自己PR
               </h3>
-              <p className="leading-8">
+
+              <p className="leading-8 md:pr-12">
                 私は大学時代、体育会の部活動に打ち込みながらプログラミングを学び、
                 「継続する力」を身につけました。特に、試合に出られない時期にも腐らず、
                 裏方として仲間を支えた経験から、努力を続けられる点と負けず嫌いな性格は
                 自分の強みです。また体育会では、挨拶や礼儀、チーム運営など社会人としての
                 基礎も多く学びました。
-                <br />
-                <br />
                 専門学校に進学後は開発にも積極的に挑戦し、8割以上の科目で「優」または
                 「秀」の評価を取得しました。学内コンテストでは1年次に意欲賞、
-                2年次に銀賞を受賞し、現在も賞を目指し日々励んでいます。
-                <br />
-                <br />
-                Git や GitHub を使ったチーム開発や Render / GitHub Pages
-                へのデプロイ、 AdobeIllustrator
-                を使ったデザイン制作など幅広く学んできました。
+                2年次に銀賞を受賞し、現在も賞を目指し日々励んでいます。 Git や
+                GitHub を使ったチーム開発や Render / GitHub Pages へのデプロイ、
+                AdobeIllustrator を使ったデザイン制作など幅広く学んできました。
                 また、円周率100桁を覚えているほど記憶力に自信があり、文章読解力にも強みがあります。
                 これまでの経験で培った継続力・技術力・記憶力を活かし、成長し続けたいと考えています。
               </p>
@@ -110,7 +106,7 @@ export default function About() {
 
         {/* 右：自己紹介動画 */}
         <div
-          className="w-full md:w-[420px] flex-shrink-0
+          className="w-full md:w-[500px] flex-shrink-0
                         md:-ml-24
                         md:mt-24"
         >
