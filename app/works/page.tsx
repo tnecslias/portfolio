@@ -2,6 +2,13 @@ import WorkCard from "../../components/WorkCard";
 
 const works = [
   {
+    title: "ちいかわキャラクター紹介サイト(製作中)",
+    description:
+      "ちいかわのキャラクターをカード型レイアウトで紹介しています。レスポンシブ対応。",
+    image: "/images/chiikawa.png",
+    url: "https://tnecslias.github.io/chiikawa-site/",
+  },
+  {
     title: "地元紹介サイト",
     description:
       "HTML/CSS,JavaScriptで作成したツーカラムレイアウトサイト。レスポンシブ対応。",

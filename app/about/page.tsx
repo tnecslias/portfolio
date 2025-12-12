@@ -1,23 +1,29 @@
 export default function About() {
   return (
-    <section>
-      <ul className="pl-5">
-        <li className="list-none">
-          <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-            資格・免許
-          </h3>
-          <p>2016年 2月　日本珠算連盟 珠算能力検定試験１級 合格</p>
-          <p>2018年10月　日本習字 漢字部 初等師範免許 取得</p>
-        </li>
+  <section>
+    {/* 横並び部分 */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <li className="list-none mt-6">
-          <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-            賞罰
-          </h3>
-          <p>2023年10月　HAL3校合同学内コンテスト 意欲賞受賞</p>
-          <p>2025年3月　進級制作展(HAL EVENT WEEK) 銀賞受賞</p>
-        </li>
+      {/* 資格・免許 */}
+      <div>
+        <h3 className="text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+          資格・免許
+        </h3>
+        <p>2016年 2月　日本珠算連盟 珠算能力検定試験１級 合格</p>
+        <p>2018年10月　日本習字 漢字部 初等師範免許 取得</p>
+      </div>
 
+      {/* 賞罰 */}
+      <div>
+        <h3 className="text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+          賞罰
+        </h3>
+        <p>2023年10月　HAL3校合同学内コンテスト 意欲賞受賞</p>
+        <p>2025年3月　進級制作展(HAL EVENT WEEK) 銀賞受賞</p>
+      </div>
+    </div>
+  </section>
+  <section>
         <li className="list-none mt-6">
           <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
             スキル
@@ -54,7 +60,7 @@ export default function About() {
             </li>
           </ul>
 
-          <h2 className="text-2xl font-bold mt-4">Docker</h2>
+          <h2 className="text-2xl font-bold mt-4">Docker、Laravel</h2>
           <ul className="list-disc ml-6">
             <li>長期インターンでスキル管理システムを開発時に使用</li>
           </ul>
