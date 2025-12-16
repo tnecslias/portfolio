@@ -32,14 +32,14 @@ export default function About() {
           スキル
         </h3>
 
-        <h4 className="text-2xl font-bold mt-4">MySQL</h4>
+        <h4 className="text-xl font-bold mt-4">MySQL</h4>
         <ul className="list-disc ml-6">
           <li>ER図作成</li>
           <li>テーブル設計</li>
           <li>一括ローディング</li>
         </ul>
 
-        <h4 className="text-2xl font-bold mt-4">JavaScript</h4>
+        <h4 className="text-xl font-bold mt-4">JavaScript</h4>
         <ul className="list-disc ml-6">
           <li>Alpine.js：BMIシミュレータ等</li>
           <li>Node.js：予定追加カレンダー</li>
@@ -48,7 +48,7 @@ export default function About() {
           <li>jQuery：スライドショー</li>
         </ul>
 
-        <h4 className="text-2xl font-bold mt-4">PHP</h4>
+        <h4 className="text-xl font-bold mt-4">PHP</h4>
         <ul className="list-disc ml-6">
           <li>オーダーシステム（会員情報、割引、ポイント算出）</li>
           <li>SNS（投稿、削除、いいね、検索、画像一覧）</li>
@@ -57,23 +57,23 @@ export default function About() {
           </li>
         </ul>
 
-        <h4 className="text-2xl font-bold mt-4">Python</h4>
+        <h4 className="text-xl font-bold mt-4">Python</h4>
         <ul className="list-disc ml-6">
           <li>FlaskでWebサーバ構築（認証・テンプレート継承）</li>
         </ul>
 
-        <h4 className="text-2xl font-bold mt-4">Docker</h4>
+        <h4 className="text-xl font-bold mt-4">Docker</h4>
         <ul className="list-disc ml-6">
           <li>長期インターンでスキル管理システム開発時に使用</li>
         </ul>
 
-        <h4 className="text-2xl font-bold mt-4">ソースコード管理</h4>
+        <h4 className="text-xl font-bold mt-4">ソースコード管理</h4>
         <ul className="list-disc ml-6">
           <li>GitHubでソースコードを公開</li>
           <li>ブランチ運用・PRを用いたチーム開発が可能</li>
         </ul>
 
-        <h4 className="text-2xl font-bold mt-4">その他</h4>
+        <h4 className="text-xl font-bold mt-4">その他</h4>
         <ul className="list-disc ml-6">
           <li>Raspberry Piでスマートホーム構築</li>
           <li>macOS環境で開発・授業を受講</li>
