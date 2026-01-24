@@ -2,11 +2,11 @@ import WorkCard from "../../components/WorkCard";
 
 const works = [
   {
-    title: "ちいかわキャラクター紹介サイト(製作中)",
+    title: "ちいかわキャラクター紹介サイト",
     description:
       "ちいかわのキャラクターをカード型レイアウトで紹介しています。レスポンシブ対応。",
     image: "/images/chiikawa.png",
-    url: "https://tnecslias.github.io/chiikawa-site/",
+    url: "https://tnecslias.github.io/chiikawa-zukan/",
   },
   {
     title: "地元紹介サイト",
