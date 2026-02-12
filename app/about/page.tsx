@@ -3,7 +3,7 @@ export default function About() {
     <section className="pl-5 space-y-10">
       {/* 経歴 */}
       <section>
-        <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
           経歴
         </h3>
         <p>
@@ -19,7 +19,7 @@ export default function About() {
 
       {/* 賞罰 */}
       <section>
-        <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
           実績
         </h3>
         <p>2023年10月　HAL3校合同学内コンテスト 意欲賞受賞</p>
@@ -28,7 +28,7 @@ export default function About() {
 
       {/* スキル */}
       <section>
-        <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
           スキル
         </h3>
 
@@ -90,13 +90,15 @@ export default function About() {
       </section>
 
       <section>
-        <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
           インターン経験
         </h3>
         <li>GMOインターネット株式会社 (1Day)</li>
         <p>
           チームでひとつのサイトを作成し、あえて同じファイルを編集することでコンフリクトを発生させて解消する実習を行いました。
         </p>
+        <br />
+        <br />
         <li>株式会社アイエンター (1month)</li>
         <p>
           6人チームで1ヶ月間、Webアプリユニットにて社員のスキル管理システムを開発しました。
@@ -109,7 +111,7 @@ export default function About() {
 
       {/* 自己PR */}
       <section>
-        <h3 className="w-40 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
+        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
           自己PR
         </h3>
         <p>
