@@ -2,6 +2,13 @@ import WorkCard from "../../components/WorkCard";
 
 const works = [
   {
+    title: "ぴったりくん",
+    description:
+      "Laravelのフレームワークを使用して作成。ECサイトとして必要な機能や検索機能を実装。",
+    image: "/images/pittarikun.png",
+    url: "https://pittarikun.onrender.com/",
+  },
+  {
     title: "ちいかわキャラクター紹介サイト",
     description:
       "ちいかわのキャラクターをカード型レイアウトで紹介しています。レスポンシブ対応。",
