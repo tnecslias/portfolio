@@ -65,12 +65,6 @@ const works = [
     image: "/images/artist.png",
     url: "https://tnecslias.github.io/artist-site/",
   },
-  {
-    title: "スポーツ選手紹介サイト",
-    description: "HTML/CSSで作成したサイト",
-    image: "/images/sports.png",
-    url: "https://tnecslias.github.io/sports-site/",
-  },
 ];
 export default function Works() {
   return (
