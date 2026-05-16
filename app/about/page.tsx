@@ -1,131 +1,148 @@
+const developmentSkills = [
+  {
+    title: "要件整理・画面設計",
+    items: [
+      "インターンで質問確認書を作成し、依頼内容を要件定義書に整理",
+      "Figmaで画面遷移とデザインカンプを作成",
+      "ユーザーが情報を探しやすい表示順やレイアウトを検討",
+    ],
+  },
+  {
+    title: "フロントエンド実装",
+    items: [
+      "React / Next.jsでコンポーネントを分けた画面実装",
+      "JavaScriptで入力値の計算、予定追加、タイマーなどのUI処理を制作",
+      "レスポンシブ対応を意識したHTML / CSSコーディング",
+    ],
+  },
+  {
+    title: "バックエンド・DB",
+    items: [
+      "Laravelで認証、検索、お気に入り、カート、注文処理を実装",
+      "MySQLでER図作成、テーブル設計、一括ローディングを経験",
+      "FlaskでCookie / Sessionを使ったログイン機能とメモ機能を制作",
+    ],
+  },
+  {
+    title: "チーム開発",
+    items: [
+      "GitHubでブランチ運用、プルリクエスト、レビュー修正、マージを経験",
+      "日報と週次報告で進捗、課題、次の作業を共有",
+      "Docker環境でチーム開発用の環境構築に触れる",
+    ],
+  },
+];
+
+const achievements = [
+  "2023年10月 HAL3校合同学内コンテスト 意欲賞受賞",
+  "2025年3月 進級制作展（HAL EVENT WEEK）銀賞受賞",
+];
+
 export default function About() {
   return (
-    <section className="pl-5 space-y-10">
-      {/* 経歴 */}
-      <section>
-        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-          経歴
-        </h3>
-        <p>
-          2017年4月 私立 函館白百合学園高等学校 普通科特別進学コース 入学
-          <br />
-          2020年3月 私立 函館白百合学園高等学校 普通科特別進学コース 卒業
-          <br />
-          2023年4月 HAL東京 IT学部 高度情報学科 入学
-          <br />
-          2027年3月 HAL東京 IT学部 高度情報学科 卒業予定
+    <div className="mx-auto max-w-5xl space-y-12">
+      <section className="border-l-4 border-cyan-500 bg-slate-50 px-5 py-6">
+        <p className="mb-2 text-sm font-semibold text-cyan-700">ABOUT</p>
+        <h1 className="text-3xl font-bold text-slate-950">
+          HAL東京 IT学部 高度情報学科でWebアプリ開発を学んでいます。
+        </h1>
+        <p className="mt-4 leading-8 text-slate-700">
+          LaravelのECサイト制作と、1ヶ月インターンでの社員スキル管理システム開発を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
+          継続して作るだけでなく、要件を整理し、利用者が見やすいUIを考えることを大切にしています。
         </p>
       </section>
 
-      {/* 賞罰 */}
       <section>
-        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-          実績
-        </h3>
-        <p>2023年10月　HAL3校合同学内コンテスト 意欲賞受賞</p>
-        <p>2025年3月　進級制作展（HAL EVENT WEEK）銀賞受賞</p>
-      </section>
+        <h2 className="mb-4 text-2xl font-bold text-slate-950">主な開発経験</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          <article className="border border-slate-200 p-5">
+            <p className="text-sm font-semibold text-cyan-700">
+              Internship / 1month
+            </p>
+            <h3 className="mt-2 text-xl font-bold text-slate-950">
+              社員スキル管理システム
+            </h3>
+            <p className="mt-3 leading-7 text-slate-700">
+              株式会社アイエンターの1ヶ月インターンで、6人チームのWebアプリユニットとして開発に参加しました。大まかな依頼から質問確認書と要件定義書を作成し、画面遷移やデザインをチームで検討。主にフロントエンドを担当し、スキル表示と情報変更機能を中心に実装しました。
+            </p>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
+              <li>担当：要件整理、Figma画面設計、フロント実装</li>
+              <li>経験：GitHub運用、コードレビュー、レビュー修正、マージ</li>
+              <li>工夫：社員情報を確認しやすいシンプルな画面構成</li>
+            </ul>
+          </article>
 
-      {/* スキル */}
-      <section>
-        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-          スキル
-        </h3>
-
-        <h4 className="text-xl font-bold mt-4">MySQL</h4>
-        <ul className="list-disc ml-6">
-          <li>ER図作成</li>
-          <li>テーブル設計</li>
-          <li>一括ローディング</li>
-        </ul>
-
-        <h4 className="text-xl font-bold mt-4">JavaScript</h4>
-        <ul className="list-disc ml-6">
-          <li>Alpine.js：家賃シミュレータ、BMIシミュレータ</li>
-          <li>Node.js：予定追加カレンダー</li>
-          <li>useState：数字の抽選</li>
-          <li>React / Next.js：メモアプリ、GeminiAPIリクエストフォーム</li>
-          <li>jQuery：スライドショー作成</li>
-        </ul>
-
-        <h4 className="text-xl font-bold mt-4">PHP</h4>
-        <ul className="list-disc ml-6">
-          <li>オーダーシステム（会員情報、割引、ポイント算出）</li>
-          <li>
-            SNS (投稿、削除、いいね、プロフィール、ワード検索、投稿画像一覧表示)
-          </li>
-          <li>
-            Laravel
-            (ログイン・ログアウト、新規登録、検索機能、お気に入り登録、カート機能、注文処理機能、ユーザー情報編集)
-          </li>
-        </ul>
-
-        <h4 className="text-xl font-bold mt-4">Python</h4>
-        <ul className="list-disc ml-6">
-          <li>
-            FlaskでWebサーバ構築（テンプレート継承、cookie、sessionを使ったログインシステム、簡易メモ帳機能）
-          </li>
-        </ul>
-
-        <h4 className="text-xl font-bold mt-4">Docker</h4>
-        <ul className="list-disc ml-6">
-          <li>長期インターンでスキル管理システム開発時に使用</li>
-        </ul>
-
-        <h4 className="text-xl font-bold mt-4">ソースコード管理</h4>
-        <ul className="list-disc ml-6">
-          <li>GitHubでソースコードを公開 https://github.com/tnecslias</li>
-          <li>
-            GitHubを活用した開発フローを理解しており、ブランチ運用やプルリクエストを用いたチーム開発が可能
-          </li>
-        </ul>
-
-        <h4 className="text-xl font-bold mt-4">その他</h4>
-        <ul className="list-disc ml-6">
-          <li>
-            Raspberry Piで温度センサーやランプを使用し、スマートホーム構築
-          </li>
-          <li>macOS環境で開発・授業を受講</li>
-        </ul>
+          <article className="border border-slate-200 p-5">
+            <p className="text-sm font-semibold text-cyan-700">
+              Laravel / MySQL
+            </p>
+            <h3 className="mt-2 text-xl font-bold text-slate-950">
+              ECサイト「ぴったりくん」
+            </h3>
+            <p className="mt-3 leading-7 text-slate-700">
+              Laravelで制作したECサイトです。ログイン、新規登録、商品検索、お気に入り、カート、注文処理、ユーザー情報編集など、ECサイトとして必要な基本機能を実装しました。MySQLのテーブル設計と画面ごとのデータ連携を意識して制作しています。
+            </p>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
+              <li>担当：認証、検索、カート、注文処理、ユーザー情報編集</li>
+              <li>技術：Laravel、PHP、MySQL、HTML / CSS</li>
+              <li>工夫：購入までの流れが迷いにくい画面構成</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section>
-        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-          インターン経験
-        </h3>
-        <ul className="list-disc ml-6">
-          <li>GMOインターネット株式会社 (1Day)</li>
-          <p>
-            チームでひとつのサイトを作成し、あえて同じファイルを編集することでコンフリクトを発生させて解消する実習を行いました。
+        <h2 className="mb-4 text-2xl font-bold text-slate-950">スキル</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          {developmentSkills.map((skill) => (
+            <section key={skill.title} className="border border-slate-200 p-5">
+              <h3 className="text-lg font-bold text-slate-950">
+                {skill.title}
+              </h3>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
+                {skill.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      </section>
+
+      <section className="grid gap-8 md:grid-cols-[1.4fr_1fr]">
+        <div>
+          <h2 className="mb-4 text-2xl font-bold text-slate-950">自己PR</h2>
+          <p className="leading-8 text-slate-700">
+            私の強みは、継続して学びながら成果物を改善し続けられることです。専門学校では授業課題だけで終わらせず、制作物をGitHub
+            PagesやRenderで公開し、画面の見やすさや機能の使いやすさを確認しながら改善してきました。
+            インターンでは、要件定義から実装、レビュー対応までの流れを経験し、開発では「頑張る」だけでなく、相手の依頼を整理し、必要な画面や機能に落とし込むことが重要だと学びました。
+            今後はWebアプリケーション開発の基礎をさらに固め、チームの中で任された機能を着実に形にできるエンジニアを目指します。
           </p>
-          <br />
-          <li>株式会社アイエンター (1month)</li>
-          <p>
-            6人チームで1ヶ月間、Webアプリユニットにて社員のスキル管理システムを開発しました。
-            大まかなシステム依頼から質問確認書を作成し要件定義書を作成、具体的な内容を決定しました。
-            デザインやページ遷移などもチームで検討し、Figmaを使用してデザインカンプを作成しました。
-            私は主にフロントエンドを担当し、スキルの表示や情報変更機能を中心に、シンプルで見やすいデザインを意識して制作しました。
-            また、日報作成や週次報告、コードレビュー、マージなどを通して、GitとGitHubを活用した実践的な開発フローを経験しました。
-          </p>
-        </ul>
-      </section>
+        </div>
 
-      {/* 自己PR */}
-      <section>
-        <h3 className="w-48 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-          自己PR
-        </h3>
-        <p>
-          私は大学時代、体育会の部活動に打ち込みながら、プログラミングを学び、「継続する力」を身につけました。
-          体育会では、「練習を苦にせず努力を続けられること」「負けず嫌いな性格」は自分の強みであると自覚することができました。
-          また、挨拶や礼儀、チーム運営など社会人としての基礎も多く学びました。
-          専門学校に進学後は、開発にも積極的に挑戦し、授業にも意欲的に取り組んでいます。その結果、9割ほどの科目で「優」または「秀」の評価を得ることができ、学内コンペでは1年次に意欲賞、2年次には銀賞を受賞しました。
-          学生時代に学んだ研究や制作内容として、GitやGitHubを使ったチーム開発も経験し、制作物をRenderとGitHubPagesにデプロイし、Webサイトを公開しました。
-          また、AdobeIllustratorでデザイン素材の制作なども行い、デザインと開発の両面でスキルを磨きました。
-          そして、円周率100桁を覚えているほど記憶力には自信があります。また、高校時代には現代文でセンター試験で96点を取った経験から、文章を読み解き、論理的に考える力にも強みがあります。
-          これまでの経験で培った継続力・技術力・記憶力を活かし、今後も楽しみながら成長していきたいと考えています。
-        </p>
+        <aside className="space-y-6">
+          <section>
+            <h2 className="mb-3 text-xl font-bold text-slate-950">実績</h2>
+            <ul className="space-y-3 text-sm leading-6 text-slate-700">
+              {achievements.map((achievement) => (
+                <li
+                  key={achievement}
+                  className="border-l-2 border-cyan-500 pl-3"
+                >
+                  {achievement}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-xl font-bold text-slate-950">学習領域</h2>
+            <p className="text-sm leading-6 text-slate-700">
+              Webアプリケーション開発、データベース設計、UI制作、GitHubを使ったチーム開発を中心に学習しています。
+            </p>
+          </section>
+        </aside>
       </section>
-    </section>
+    </div>
   );
 }
