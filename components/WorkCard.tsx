@@ -3,19 +3,37 @@ type Props = {
   description: string;
   image: string;
   url: string;
+  featured?: boolean;
 };
 
-export default function WorkCard({ title, description, image, url }: Props) {
+export default function WorkCard({
+  title,
+  description,
+  image,
+  url,
+  featured,
+}: Props) {
   return (
     <a
       href={url}
-      target="_blank"
-      className="block border rounded-lg overflow-hidden hover:shadow-lg transition"
+      className="group block overflow-hidden border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-lg"
     >
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="p-4">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-sm text-gray-600">{description}</p>
+      <div className="relative">
+        <img src={image} alt={title} className="h-48 w-full object-cover" />
+        {featured && (
+          <span className="absolute left-3 top-3 border border-cyan-200 bg-cyan-600 px-4 py-1.5 text-xs font-bold tracking-wide text-white shadow-md">
+            PICK UP
+          </span>
+        )}
+      </div>
+      <div className="p-5">
+        <h3 className="text-xl font-bold text-slate-950">{title}</h3>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          {description}
+        </p>
+        <p className="mt-4 text-sm font-semibold text-cyan-700 transition group-hover:text-cyan-900">
+          サイトを見る
+        </p>
       </div>
     </a>
   );

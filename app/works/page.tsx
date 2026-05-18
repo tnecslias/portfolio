@@ -7,6 +7,7 @@ const works = [
       "Laravelのフレームワークを使用して作成。ECサイトとして必要な機能や検索機能を実装。",
     image: "/images/pittarikun.png",
     url: "https://pittarikun.onrender.com/",
+    featured: true,
   },
   {
     title: "ちいかわキャラクター紹介サイト",
@@ -14,6 +15,7 @@ const works = [
       "ちいかわのキャラクターをカード型レイアウトで紹介しています。レスポンシブ対応。",
     image: "/images/chiikawa.png",
     url: "https://tnecslias.github.io/chiikawa-zukan/",
+    featured: true,
   },
   {
     title: "地元紹介サイト",
@@ -21,6 +23,7 @@ const works = [
       "HTML/CSS,JavaScriptで作成したツーカラムレイアウトサイト。レスポンシブ対応。",
     image: "/images/hakodate.png",
     url: "https://tnecslias.github.io/hakodate-site/",
+    featured: true,
   },
   {
     title: "お気に入りアイテム紹介サイト",
@@ -68,15 +71,22 @@ const works = [
 ];
 export default function Works() {
   return (
-    <section>
-      <h3 className="w-60 text-xl font-bold mb-3 bg-gray-100 border-l-4 border-blue-400 px-4 py-2 rounded shadow-sm">
-        作品一覧 (新着順)
-      </h3>
-      <div className="grid gap-6 md:grid-cols-2">
-        {works.map((work, index) => (
-          <WorkCard key={index} {...work} />
-        ))}
-      </div>
-    </section>
+    <div className="mx-auto max-w-5xl space-y-8">
+      <section className="border-l-4 border-cyan-500 bg-slate-50 px-5 py-6">
+        <p className="mb-2 text-sm font-semibold text-cyan-700">WORKS</p>
+        <h1 className="text-3xl font-bold text-slate-950">作品一覧</h1>
+        <p className="mt-4 leading-8 text-slate-700">
+          授業制作、個人制作、インターンで制作したWebサイトやWebアプリを新着順にまとめています。
+        </p>
+      </section>
+
+      <section>
+        <div className="grid gap-6 md:grid-cols-2">
+          {works.map((work, index) => (
+            <WorkCard key={index} {...work} />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

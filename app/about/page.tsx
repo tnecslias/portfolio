@@ -165,7 +165,7 @@ export default function About() {
 
               <section>
                 <p className="font-semibold text-slate-950">
-                  GMOインターネット / 1日
+                  GMOインターネット株式会社 / 1日
                 </p>
                 <p className="mt-2 leading-7 text-slate-700">
                   企業から与えられた課題として、ニュース情報を取得し、自分でデザインしたサイトに埋め込む制作に取り組みました。短時間の中で、情報量の多いニュースを読みやすく配置し、画面として分かりやすく見せることを意識しました。コンフリクトを解消する実習も経験しました。
