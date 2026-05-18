@@ -10,9 +10,8 @@ const developmentSkills = [
   {
     title: "フロントエンド実装",
     items: [
-      "React / Next.jsでコンポーネントを分けた画面実装",
-      "JavaScriptで入力値の計算、予定追加、タイマーなどのUI処理を制作",
-      "1日インターンでニュース情報を読みやすく配置するサイトを制作",
+      "React&Next.js：メモアプリ、GeminiAPIリクエストフォーム、オーダーシステムなどを制作",
+      "Node.jsで時間指定ができる予定追加機能付きカレンダーを制作",
     ],
   },
   {
@@ -35,12 +34,12 @@ const developmentSkills = [
 
 const strengths = [
   {
-    title: "継続して改善する力",
-    text: "制作物を公開して終わりにせず、周りに見てもらい、気づいた点をすぐ直すことを大切にしています。",
+    title: "納得するまで完成度を上げる力",
+    text: "制作物を作って終わりにせず、気になる点を見直しながら、納得できる形になるまで修正を重ねます。",
   },
   {
     title: "利用者目線のUI改善",
-    text: "操作に迷いそうな部分を見直し、ボタンの配置や色など細かな見せ方まで調整します。",
+    text: "実際に使ってもらい、操作に迷いそうな部分を見直し、ボタンの配置や色など細かな見せ方まで調整します。",
   },
   {
     title: "チームで形にする力",
@@ -62,7 +61,7 @@ export default function About() {
           HAL東京 IT学部 高度情報学科でWebアプリ開発を学んでいます。
         </h1>
         <p className="mt-4 leading-8 text-slate-700">
-          LaravelのECサイト制作と、1ヶ月インターンでの社員スキル管理システム開発を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
+          LaravelのECサイト制作、Miseba、インターンでの開発体験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
           継続して作るだけでなく、周りからの意見を取り入れながら、利用者が迷わず使えるUIへ改善することを大切にしています。
         </p>
       </section>
@@ -91,25 +90,6 @@ export default function About() {
         <div className="grid gap-4 md:grid-cols-2">
           <article className="border border-slate-200 p-5">
             <p className="text-sm font-semibold text-cyan-700">
-              Internship / 1month
-            </p>
-            <h3 className="mt-2 text-xl font-bold text-slate-950">
-              社員スキル管理システム
-            </h3>
-            <p className="mt-3 leading-7 text-slate-700">
-              株式会社アイエンターの1ヶ月インターンで、6人チームのWebアプリユニットとして開発に参加しました。大まかな依頼から質問確認書と要件定義書を作成し、画面遷移やデザインをチームで検討。見やすさを意識した配色や見た目のデザイン案を提案し、採用された案をもとに担当画面を実装しました。
-            </p>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
-              <li>担当：要件整理、Figma画面設計、フロント実装</li>
-              <li>経験：GitHub運用、進捗共有、コードレビュー、レビュー修正</li>
-              <li>
-                工夫：メンバーが納得できる、社員情報を確認しやすい画面提案
-              </li>
-            </ul>
-          </article>
-
-          <article className="border border-slate-200 p-5">
-            <p className="text-sm font-semibold text-cyan-700">
               Laravel / MySQL
             </p>
             <h3 className="mt-2 text-xl font-bold text-slate-950">
@@ -118,11 +98,85 @@ export default function About() {
             <p className="mt-3 leading-7 text-slate-700">
               Laravelで制作したECサイトです。ログイン、新規登録、商品検索、お気に入り、カート、注文処理、ユーザー情報編集など、ECサイトとして必要な基本機能を実装しました。購入までの流れで迷わないよう、周りに見てもらいながらボタンの配置や色を見直し、使いやすさを改善しました。
             </p>
+            <a
+              href="https://pittarikun.onrender.com/"
+              className="mt-3 inline-block text-sm font-semibold text-cyan-700 hover:text-cyan-900"
+            >
+              サイトを見る
+            </a>
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
-              <li>担当：認証、検索、カート、注文処理、ユーザー情報編集</li>
+              <li>個人開発</li>
               <li>技術：Laravel、PHP、MySQL、HTML / CSS</li>
               <li>工夫：購入までの流れとボタンの見つけやすさを改善</li>
             </ul>
+          </article>
+
+          <article className="border border-slate-200 p-5">
+            <p className="text-sm font-semibold text-cyan-700">
+              Next.js / Hono / MySQL
+            </p>
+            <h3 className="mt-2 text-xl font-bold text-slate-950">Miseba</h3>
+            <p className="mt-3 leading-7 text-slate-700">
+              SNSの拡散力とECの販売機能を組み合わせ、クリエイターが作品や商品を広く届けられるプラットフォームをチーム開発で制作しました。フロントエンド担当として、作品を見つけた人が興味を持ったタイミングで購入まで進めるよう、発見から購買までの流れを意識して制作しています。
+            </p>
+            <a
+              href="https://miseba.syntck.com/"
+              className="mt-3 inline-block text-sm font-semibold text-cyan-700 hover:text-cyan-900"
+            >
+              サイトを見る
+            </a>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
+              <li>チーム開発 / フロントエンド担当</li>
+              <li>
+                技術：TypeScript、Bun、Hono、Prisma、MySQL、Next.js、React
+              </li>
+              <li>
+                Figmaでフォロー、フォロワー、おすすめ、新規ポスト画面を作成
+              </li>
+              <li>
+                工夫：星と評価値をまとめたコンポーネントを作成し、評価値を星の中央に揃えて表示
+              </li>
+            </ul>
+          </article>
+
+          <article className="border border-slate-200 p-5 md:col-span-2">
+            <p className="text-sm font-semibold text-cyan-700">Internship</p>
+            <h3 className="mt-2 text-xl font-bold text-slate-950">
+              インターン経験
+            </h3>
+            <div className="mt-3 grid gap-5 md:grid-cols-2">
+              <section>
+                <p className="font-semibold text-slate-950">
+                  株式会社アイエンター / 1ヶ月
+                </p>
+                <p className="mt-2 leading-7 text-slate-700">
+                  6人チームのWebアプリユニットとして、社員スキル管理システムの開発に参加しました。大まかな依頼から質問確認書と要件定義書を作成し、画面遷移やデザインをチームで検討。見やすさを意識した配色や見た目のデザイン案を提案し、採用された案をもとに担当画面を実装しました。
+                </p>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
+                  <li>担当：要件整理、Figma画面設計、フロント実装</li>
+                  <li>
+                    経験：GitHub運用、進捗共有、コードレビュー、レビュー修正
+                  </li>
+                  <li>
+                    工夫：メンバーが納得できる、社員情報を確認しやすい画面提案
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <p className="font-semibold text-slate-950">
+                  GMOインターネット / 1日
+                </p>
+                <p className="mt-2 leading-7 text-slate-700">
+                  企業から与えられた課題として、ニュース情報を取得し、自分でデザインしたサイトに埋め込む制作に取り組みました。短時間の中で、情報量の多いニュースを読みやすく配置し、画面として分かりやすく見せることを意識しました。コンフリクトを解消する実習も経験しました。
+                </p>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
+                  <li>内容：ニュース情報を取得してサイトに表示</li>
+                  <li>担当：デザイン、情報配置、画面実装</li>
+                  <li>工夫：読みやすい配置と情報の見せ方を検討</li>
+                </ul>
+              </section>
+            </div>
           </article>
         </div>
       </section>
@@ -145,40 +199,30 @@ export default function About() {
         </div>
       </section>
 
-      <section className="grid gap-8 md:grid-cols-[1.4fr_1fr]">
+      <section>
+        <h2 className="mb-4 text-2xl font-bold text-slate-950">受賞歴</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          {achievements.map((achievement) => (
+            <article key={achievement} className="border border-slate-200 p-5">
+              <p className="border-l-2 border-cyan-500 pl-3 text-sm leading-6 text-slate-700">
+                {achievement}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section>
         <div>
           <h2 className="mb-4 text-2xl font-bold text-slate-950">自己PR</h2>
           <p className="leading-8 text-slate-700">
-            私の強みは、継続して学びながら成果物を改善し続けられることです。専門学校では授業課題だけで終わらせず、制作物をGitHub
+            私の強みは、納得するまで修正を重ね、成果物の完成度を上げられることです。授業課題だけで終わらせず、制作物をGitHub
             PagesやRenderで公開し、画面の見やすさや機能の使いやすさを確認しながら改善してきました。
             制作中は周りに見てもらい、指摘や気づきをすぐ反映することで、利用者が迷わない画面に近づけることを意識しています。
-            1ヶ月インターンでは、要件定義からデザイン提案、実装、レビュー対応までの流れを経験しました。GMOインターネットでの1日インターンでは、企業から与えられた課題としてニュース情報を取得し、自分でデザインしたサイトに読みやすく配置・実装しました。
+            学内で行われた就活イベントでは、学科内で最も多くの企業からお声がけをいただき、自分の制作への取り組みを評価していただく経験ができました。
             今後はフロントエンドの基礎をさらに固め、チームの中で任された機能を着実に形にしながら、見やすく使いやすいUIを提案できるエンジニアを目指します。
           </p>
         </div>
-
-        <aside className="space-y-6">
-          <section>
-            <h2 className="mb-3 text-xl font-bold text-slate-950">実績</h2>
-            <ul className="space-y-3 text-sm leading-6 text-slate-700">
-              {achievements.map((achievement) => (
-                <li
-                  key={achievement}
-                  className="border-l-2 border-cyan-500 pl-3"
-                >
-                  {achievement}
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-xl font-bold text-slate-950">学習領域</h2>
-            <p className="text-sm leading-6 text-slate-700">
-              フロントエンド実装、UI制作、Webアプリケーション開発、データベース設計、GitHubを使ったチーム開発を中心に学習しています。
-            </p>
-          </section>
-        </aside>
       </section>
     </div>
   );
