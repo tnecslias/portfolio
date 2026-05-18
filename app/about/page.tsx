@@ -55,7 +55,7 @@ const achievements = [
 export default function About() {
   return (
     <div className="mx-auto max-w-5xl space-y-12">
-      <section className="border-l-4 border-cyan-500 bg-slate-50 px-5 py-6">
+      <section className="border-l-4 border-cyan-500 bg-white px-5 py-6">
         <p className="mb-2 text-sm font-semibold text-cyan-700">ABOUT</p>
         <h1 className="text-3xl font-bold text-slate-950">
           HAL東京 IT学部 高度情報学科でWebアプリ開発を学んでいます。
@@ -72,7 +72,7 @@ export default function About() {
           {strengths.map((strength) => (
             <article
               key={strength.title}
-              className="border border-slate-200 p-5"
+              className="border border-slate-200 bg-white p-5"
             >
               <h3 className="text-lg font-bold text-slate-950">
                 {strength.title}
@@ -88,7 +88,7 @@ export default function About() {
       <section>
         <h2 className="mb-4 text-2xl font-bold text-slate-950">主な開発経験</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <article className="border border-slate-200 p-5">
+          <article className="border border-slate-200 bg-white p-5">
             <p className="text-sm font-semibold text-cyan-700">
               Laravel / MySQL
             </p>
@@ -111,7 +111,7 @@ export default function About() {
             </ul>
           </article>
 
-          <article className="border border-slate-200 p-5">
+          <article className="border border-slate-200 bg-white p-5">
             <p className="text-sm font-semibold text-cyan-700">
               Next.js / Hono / MySQL
             </p>
@@ -139,7 +139,7 @@ export default function About() {
             </ul>
           </article>
 
-          <article className="border border-slate-200 p-5 md:col-span-2">
+          <article className="border border-slate-200 bg-white p-5 md:col-span-2">
             <p className="text-sm font-semibold text-cyan-700">Internship</p>
             <h3 className="mt-2 text-xl font-bold text-slate-950">
               インターン経験
@@ -185,7 +185,7 @@ export default function About() {
         <h2 className="mb-4 text-2xl font-bold text-slate-950">スキル</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {developmentSkills.map((skill) => (
-            <section key={skill.title} className="border border-slate-200 p-5">
+            <section key={skill.title} className="border border-slate-200 bg-white p-5">
               <h3 className="text-lg font-bold text-slate-950">
                 {skill.title}
               </h3>
@@ -203,7 +203,7 @@ export default function About() {
         <h2 className="mb-4 text-2xl font-bold text-slate-950">受賞歴</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {achievements.map((achievement) => (
-            <article key={achievement} className="border border-slate-200 p-5">
+            <article key={achievement} className="border border-slate-200 bg-white p-5">
               <p className="border-l-2 border-cyan-500 pl-3 text-sm leading-6 text-slate-700">
                 {achievement}
               </p>

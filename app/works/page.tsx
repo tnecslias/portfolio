@@ -72,7 +72,7 @@ const works = [
 export default function Works() {
   return (
     <div className="mx-auto max-w-5xl space-y-8">
-      <section className="border-l-4 border-cyan-500 bg-slate-50 px-5 py-6">
+      <section className="border-l-4 border-cyan-500 bg-white px-5 py-6">
         <p className="mb-2 text-sm font-semibold text-cyan-700">WORKS</p>
         <h1 className="text-3xl font-bold text-slate-950">作品一覧</h1>
         <p className="mt-4 leading-8 text-slate-700">
