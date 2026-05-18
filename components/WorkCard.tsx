@@ -31,8 +31,8 @@ export default function WorkCard({
         <p className="mt-3 text-sm leading-6 text-slate-700">
           {description}
         </p>
-        <p className="mt-4 text-sm font-semibold text-cyan-700 transition group-hover:text-cyan-900">
-          サイトを見る
+        <p className="mt-4 inline-block border border-cyan-600 px-4 py-2 text-sm font-semibold text-cyan-700 transition group-hover:bg-cyan-50 group-hover:text-cyan-900">
+          サイトを見る →
         </p>
       </div>
     </a>

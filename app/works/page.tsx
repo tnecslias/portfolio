@@ -76,7 +76,7 @@ export default function Works() {
         <p className="mb-2 text-sm font-semibold text-cyan-700">WORKS</p>
         <h1 className="text-3xl font-bold text-slate-950">作品一覧</h1>
         <p className="mt-4 leading-8 text-slate-700">
-          授業制作、個人制作、インターンで制作したWebサイトやWebアプリを新着順にまとめています。
+          授業制作、個人制作で制作したWebサイトやWebアプリを新着順にまとめています。
         </p>
       </section>
 

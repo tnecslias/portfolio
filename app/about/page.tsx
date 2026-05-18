@@ -1,32 +1,40 @@
 const developmentSkills = [
   {
-    title: "要件整理・画面設計",
+    title: "フレームワーク",
     items: [
-      "インターンで質問確認書を作成し、依頼内容を要件定義書に整理",
-      "Figmaで画面遷移と、チームが納得できるデザインカンプを作成",
-      "ユーザーが情報を探しやすい表示順やレイアウトを検討",
+      "Flask：Cookie / Sessionを使ったログイン機能とメモ機能を制作",
+      "jQuery：スライドショーの実装",
+      "Node.js：時間指定ができる予定追加機能付きカレンダーを制作",
+      "Laravel：認証、検索、お気に入り、カート、注文処理を含むECサイトを制作",
+      "React：メモアプリ、GeminiAPIリクエストフォーム、オーダーシステムなどを制作",
+      "Next.js：1日インターンのサイト制作でも使用",
     ],
   },
   {
-    title: "フロントエンド実装",
+    title: "使えるツール",
     items: [
-      "React&Next.js：メモアプリ、GeminiAPIリクエストフォーム、オーダーシステムなどを制作",
-      "Node.jsで時間指定ができる予定追加機能付きカレンダーを制作",
+      "macOS環境でエディタやターミナルを使った開発",
+      "Codexを使ったコード修正、実装補助、制作物の改善",
+      "Teams / Slackでの連絡、進捗共有、報告",
+      "Figmaで画面遷移、デザインカンプ、UI案を作成",
+      "Illustratorで素材やデザインを作成しコンテストへ応募",
+      "Unityでゲーム制作や3D表現に触れる",
+      "Redmineで日報、週次報告、課題管理を経験",
+      "Git / GitHubでブランチ運用、プルリクエスト、レビュー修正を経験",
     ],
   },
   {
-    title: "バックエンド・DB",
+    title: "DB",
     items: [
-      "Laravelで認証、検索、お気に入り、カート、注文処理を実装",
       "MySQLでER図作成、テーブル設計、一括ローディングを経験",
-      "FlaskでCookie / Sessionを使ったログイン機能とメモ機能を制作",
+      "PostgreSQLでRenderへのデプロイに合わせたDB構成へ作り直し",
     ],
   },
   {
     title: "チーム開発",
     items: [
-      "GitHubでブランチ運用、プルリクエスト、レビュー修正、マージを経験",
-      "日報と週次報告で進捗、課題、次の作業を共有",
+      "GitとGitHubを活用した実践的な開発フローを経験",
+      "日報と週次報告で進捗、課題、次の作業を共有など",
       "Docker環境でチーム開発用の環境構築に触れる",
     ],
   },
@@ -38,12 +46,12 @@ const strengths = [
     text: "制作物を作って終わりにせず、気になる点を見直しながら、納得できる形になるまで修正を重ねます。",
   },
   {
-    title: "利用者目線のUI改善",
+    title: "ユーザー目線のUI改善",
     text: "実際に使ってもらい、操作に迷いそうな部分を見直し、ボタンの配置や色など細かな見せ方まで調整します。",
   },
   {
-    title: "チームで形にする力",
-    text: "インターンでは見やすさを意識したデザイン案を提案し、採用された案をもとに担当画面を実装しました。",
+    title: "チーム制作での提案力",
+    text: "インターンでは見やすさを意識したデザイン案を提案し、メンバーが納得できる形に調整して採用につなげました。",
   },
 ];
 
@@ -54,14 +62,24 @@ const achievements = [
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-5xl space-y-12">
+    <div className="relative mx-auto max-w-5xl space-y-12 [&>section]:relative [&>section]:z-10">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0"
+      >
+        <img
+          src="/images/about-pittarikun.png"
+          alt=""
+          className="absolute -left-20 top-[520px] w-32 -rotate-12 opacity-25 md:-left-32 md:w-48"
+        />
+      </div>
       <section className="border-l-4 border-cyan-500 bg-white px-5 py-6">
         <p className="mb-2 text-sm font-semibold text-cyan-700">ABOUT</p>
         <h1 className="text-3xl font-bold text-slate-950">
           HAL東京 IT学部 高度情報学科でWebアプリ開発を学んでいます。
         </h1>
         <p className="mt-4 leading-8 text-slate-700">
-          LaravelのECサイト制作、Miseba、インターンでの開発体験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
+          LaravelのECサイト制作、SNS×ECサイト制作、インターンでの開発体験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
           継続して作るだけでなく、周りからの意見を取り入れながら、利用者が迷わず使えるUIへ改善することを大切にしています。
         </p>
       </section>
@@ -96,13 +114,13 @@ export default function About() {
               ECサイト「ぴったりくん」
             </h3>
             <p className="mt-3 leading-7 text-slate-700">
-              Laravelで制作したECサイトです。ログイン、新規登録、商品検索、お気に入り、カート、注文処理、ユーザー情報編集など、ECサイトとして必要な基本機能を実装しました。購入までの流れで迷わないよう、周りに見てもらいながらボタンの配置や色を見直し、使いやすさを改善しました。
+              Laravelで制作したECサイトです。ログイン、新規登録、商品検索、お気に入り、カート、注文処理、ユーザー情報編集など、ECサイトとして必要な基本機能を実装しました。実際に使ってもらいながら使いやすさを改善、細かいインタラクションにもこだわって制作しました。MVCモデルの理解を深め、Webアプリケーション開発の⼀連の流れを習得しました。
             </p>
             <a
               href="https://pittarikun.onrender.com/"
-              className="mt-3 inline-block text-sm font-semibold text-cyan-700 hover:text-cyan-900"
+              className="mt-4 inline-block border border-cyan-600 px-4 py-2 text-sm font-semibold text-cyan-700 transition hover:bg-cyan-50 hover:text-cyan-900"
             >
-              サイトを見る
+              サイトを見る →
             </a>
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
               <li>個人開発</li>
@@ -121,17 +139,14 @@ export default function About() {
             </p>
             <a
               href="https://miseba.syntck.com/"
-              className="mt-3 inline-block text-sm font-semibold text-cyan-700 hover:text-cyan-900"
+              className="mt-4 inline-block border border-cyan-600 px-4 py-2 text-sm font-semibold text-cyan-700 transition hover:bg-cyan-50 hover:text-cyan-900"
             >
-              サイトを見る
+              サイトを見る →
             </a>
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
               <li>チーム開発 / フロントエンド担当</li>
               <li>
                 技術：TypeScript、Bun、Hono、Prisma、MySQL、Next.js、React
-              </li>
-              <li>
-                Figmaでフォロー、フォロワー、おすすめ、新規ポスト画面を作成
               </li>
               <li>
                 工夫：星と評価値をまとめたコンポーネントを作成し、評価値を星の中央に揃えて表示
@@ -171,8 +186,8 @@ export default function About() {
                   企業から与えられた課題として、ニュース情報を取得し、自分でデザインしたサイトに埋め込む制作に取り組みました。短時間の中で、情報量の多いニュースを読みやすく配置し、画面として分かりやすく見せることを意識しました。コンフリクトを解消する実習も経験しました。
                 </p>
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
-                  <li>内容：ニュース情報を取得してサイトに表示</li>
-                  <li>担当：デザイン、情報配置、画面実装</li>
+                  <li>担当：デザイン、ニュース情報の配置、画面実装</li>
+                  <li>経験：Gitのコンフリクト発生と解消を実習</li>
                   <li>工夫：読みやすい配置と情報の見せ方を検討</li>
                 </ul>
               </section>
@@ -185,7 +200,10 @@ export default function About() {
         <h2 className="mb-4 text-2xl font-bold text-slate-950">スキル</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {developmentSkills.map((skill) => (
-            <section key={skill.title} className="border border-slate-200 bg-white p-5">
+            <section
+              key={skill.title}
+              className="border border-slate-200 bg-white p-5"
+            >
               <h3 className="text-lg font-bold text-slate-950">
                 {skill.title}
               </h3>
@@ -203,7 +221,10 @@ export default function About() {
         <h2 className="mb-4 text-2xl font-bold text-slate-950">受賞歴</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {achievements.map((achievement) => (
-            <article key={achievement} className="border border-slate-200 bg-white p-5">
+            <article
+              key={achievement}
+              className="border border-slate-200 bg-white p-5"
+            >
               <p className="border-l-2 border-cyan-500 pl-3 text-sm leading-6 text-slate-700">
                 {achievement}
               </p>
