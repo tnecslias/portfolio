@@ -79,7 +79,7 @@ export default function About() {
           HAL東京 IT学部 高度情報学科でWebアプリ開発を学んでいます。
         </h1>
         <p className="mt-4 leading-8 text-slate-700">
-          LaravelのECサイト制作、SNS×ECサイト制作、インターンでの開発体験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
+          LaravelのECサイト制作、プラットフォーム制作、インターンでの開発体験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
           継続して作るだけでなく、周りからの意見を取り入れながら、利用者が迷わず使えるUIへ改善することを大切にしています。
         </p>
       </section>
@@ -133,7 +133,9 @@ export default function About() {
             <p className="text-sm font-semibold text-cyan-700">
               Next.js / Hono / MySQL
             </p>
-            <h3 className="mt-2 text-xl font-bold text-slate-950">Miseba</h3>
+            <h3 className="mt-2 text-xl font-bold text-slate-950">
+              SNS×ECサイト「Miseba」
+            </h3>
             <p className="mt-3 leading-7 text-slate-700">
               SNSの拡散力とECの販売機能を組み合わせ、クリエイターが作品や商品を広く届けられるプラットフォームをチーム開発で制作しました。フロントエンド担当として、作品を見つけた人が興味を持ったタイミングで購入まで進めるよう、発見から購買までの流れを意識して制作しています。
             </p>
