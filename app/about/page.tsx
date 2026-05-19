@@ -79,7 +79,7 @@ export default function About() {
           HAL東京 IT学部 高度情報学科でWebアプリ開発を学んでいます。
         </h1>
         <p className="mt-4 leading-8 text-slate-700">
-          LaravelのECサイト制作、プラットフォーム制作、インターンでの開発体験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
+          LaravelのECサイト制作、プラットフォーム制作、インターンでの開発経験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
           継続して作るだけでなく、周りからの意見を取り入れながら、利用者が迷わず使えるUIへ改善することを大切にしています。
         </p>
       </section>
@@ -125,7 +125,9 @@ export default function About() {
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
               <li>個人開発</li>
               <li>技術：Laravel、PHP、MySQL、HTML / CSS</li>
-              <li>工夫：購入までの流れとボタンの見つけやすさを改善</li>
+              <li>
+                工夫：購入までの流れとボタンの見つけやすさを改善。さらに、細かいインタラクションにもこだわって制作しました。
+              </li>
             </ul>
           </article>
 
@@ -151,7 +153,7 @@ export default function About() {
                 技術：TypeScript、Bun、Hono、Prisma、MySQL、Next.js、React
               </li>
               <li>
-                工夫：星と評価値をまとめたコンポーネントを作成し、評価値を星の中央に揃えて表示
+                工夫：評価値をpropsで受け取り、星アイコンと数値を揃えて表示するコンポーネントを作成。発見から購入まで迷わず進めるよう、画面ごとの情報整理と導線を意識しました。
               </li>
             </ul>
           </article>
@@ -164,7 +166,7 @@ export default function About() {
             <div className="mt-3 grid gap-5 md:grid-cols-2">
               <section>
                 <p className="font-semibold text-slate-950">
-                  株式会社アイエンター / 1ヶ月
+                  株式会社アイエンター / 1ヶ月 / リモート環境
                 </p>
                 <p className="mt-2 leading-7 text-slate-700">
                   6人チームのWebアプリユニットとして、社員スキル管理システムの開発に参加しました。大まかな依頼から質問確認書と要件定義書を作成し、画面遷移やデザインをチームで検討。見やすさを意識した配色や見た目のデザイン案を提案し、採用された案をもとに担当画面を実装しました。
