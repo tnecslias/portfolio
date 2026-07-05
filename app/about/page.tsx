@@ -6,6 +6,7 @@ const developmentSkills = [
       "jQuery：スライドショーの実装",
       "Node.js：時間指定ができる予定追加機能付きカレンダーを制作",
       "Laravel：認証、検索、お気に入り、カート、注文処理を含むECサイトを制作",
+      "Django：初めての開発でチュートリアルを活用し、社員管理システムを個人開発",
       "React：メモアプリ、GeminiAPIリクエストフォーム、オーダーシステムなどを制作",
       "Next.js：1日インターンのサイト制作でも使用",
     ],
@@ -79,7 +80,7 @@ export default function About() {
           HAL東京 IT学部 高度情報学科でWebアプリ開発を学んでいます。
         </h1>
         <p className="mt-4 leading-8 text-slate-700">
-          LaravelのECサイト制作、プラットフォーム制作、インターンでの開発経験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。
+          LaravelのECサイト制作、プラットフォーム制作、インターンでの開発経験を中心に、画面設計、フロント実装、DB設計、GitHubを使ったレビュー対応を経験しました。Djangoを使った社員管理システムの個人開発にも取り組んでいます。
           継続して作るだけでなく、周りからの意見を取り入れながら、利用者が迷わず使えるUIへ改善することを大切にしています。
         </p>
       </section>
@@ -163,7 +164,7 @@ export default function About() {
             <h3 className="mt-2 text-xl font-bold text-slate-950">
               インターン経験
             </h3>
-            <div className="mt-3 grid gap-5 md:grid-cols-2">
+            <div className="mt-3 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               <section>
                 <p className="font-semibold text-slate-950">
                   株式会社アイエンター / 1ヶ月 / リモート環境
@@ -193,6 +194,25 @@ export default function About() {
                   <li>担当：デザイン、ニュース情報の配置、画面実装</li>
                   <li>経験：Gitのコンフリクト発生と解消を実習</li>
                   <li>工夫：読みやすい配置と情報の見せ方を検討</li>
+                </ul>
+              </section>
+
+              <section>
+                <p className="font-semibold text-slate-950">
+                  株式会社アドグローブ / 3日間
+                </p>
+                <p className="mt-2 leading-7 text-slate-700">
+                  3日間のインターンで、Djangoを使用した社員管理システムを個人開発しました。Djangoでの開発は初めてだったため、制作前にAIでチュートリアルを作成してもらい、基本的な構成や実装の流れを予習してから取り組みました。
+                </p>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
+                  <li>担当：個人開発、事前学習、画面設計、Djangoでの実装</li>
+                  <li>
+                    経験：朝会、夕会での進捗共有、コードレビュー、レビュー修正
+                  </li>
+                  <li>機能：社員情報の登録、表示、管理機能の制作</li>
+                  <li>
+                    工夫：初めての技術でも事前に学習し、短期間で必要な機能を整理
+                  </li>
                 </ul>
               </section>
             </div>
