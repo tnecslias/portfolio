@@ -167,7 +167,7 @@ export default function About() {
             <div className="mt-3 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               <section>
                 <p className="font-semibold text-slate-950">
-                  株式会社アイエンター / 1ヶ月 / リモート環境
+                  株式会社アイエンター / 1ヶ月 / リモート
                 </p>
                 <p className="mt-2 leading-7 text-slate-700">
                   6人チームのWebアプリユニットとして、社員スキル管理システムの開発に参加しました。大まかな依頼から質問確認書と要件定義書を作成し、画面遷移やデザインをチームで検討。見やすさを意識した配色や見た目のデザイン案を提案し、採用された案をもとに担当画面を実装しました。
@@ -205,11 +205,10 @@ export default function About() {
                   3日間のインターンで、Djangoを使用した社員管理システムを個人開発しました。Djangoでの開発は初めてだったため、制作前にAIでチュートリアルを作成してもらい、基本的な構成や実装の流れを予習してから取り組みました。
                 </p>
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-700">
-                  <li>担当：個人開発、事前学習、画面設計、Djangoでの実装</li>
+                  <li>担当：社員情報の登録、表示などDjangoでの実装</li>
                   <li>
                     経験：朝会、夕会での進捗共有、コードレビュー、レビュー修正
                   </li>
-                  <li>機能：社員情報の登録、表示、管理機能の制作</li>
                   <li>
                     工夫：初めての技術でも事前に学習し、短期間で必要な機能を整理
                   </li>
